@@ -1,2 +1,2 @@
 # Caffe-Z
-##javascript for cafe using prompt and alert.
+##javascript project for cafeshop.
