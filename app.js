@@ -1,13 +1,36 @@
-let user = prompt ("please enter your name");
-let gender = prompt("your gender");
+let user_name = prompt ("please enter your name");
+function gender() {
 
-if (gender == "male") {
-    alert("Welcome Mr " + user);
-} else if (gender == "female") {
-    alert("Welcome Ms " + user);
-} else{
-    alert("Welcome")
+    while (gender !== "male" || gender !== "female") {
+        gender = prompt("What is your gender?");
+        let check = gender.toLowerCase();
+        if (check === "male") {
+            alert("Welcome Mr " + user_name);
+            break;
+        } else if (check === "female") {
+            alert("Welcome Ms " + user_name);
+            break;
+        } else {
+            alert("Invalid input. Please enter 'male' or 'female'.");
+        }
+    }
 }
+// let gender;
+
+
+// while (gender != "male" || gender != "female") {
+//     gender = prompt("what is your gender");
+//     let check = gender.toLowerCase();
+//     if (check == "male") {
+//         alert("Welcome Mr " + user_name);
+//         break;
+//     } else if (check == "female") {
+//         alert("Welcome Ms " + user_name);
+//         break;
+//     } 
+// }
+
+    gender();
 
 
 let drink = prompt ("hot drink or cold drink");
@@ -15,8 +38,8 @@ let order = prompt ("what is your order");
 
 alert("your drink is getting preaperd");
 
-
-console.log("user name: " + user);
-console.log("gender: " + gender);
-console.log("order: " + order);
-
+var user = [];
+user.push(user_name,gender,drink,order);
+    for (let i = 0; i< user.length; i++) {
+        console.log(user[i]);
+    }
