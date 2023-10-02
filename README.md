@@ -1,2 +1,3 @@
 # Caffe-Z
-##javascript project for cafeshop.
+##javascript project for caffeshop.
+[Caffe-Z](https://sanadhantash.github.io/Caffe-Z/)
