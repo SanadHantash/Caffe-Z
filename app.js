@@ -15,16 +15,8 @@ function gender(g) {
     }
 }
 
-
-
-
-
-
-
-
 let user_name = prompt ("please enter your name");
-
-let g =gender();
+let g = gender();
 
 
 let drink = prompt ("hot drink or cold drink");
